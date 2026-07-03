@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kelvin Jacob Wandera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="sprocket-strip" aria-hidden="true"></div>
+        <div class="header-inner">
+            <div class="brand">
+                <h1>Kelvin Jacob Wandera</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="slate-bar">
+            <span class="slate-item"><span class="slate-label">SCENE</span> CONTACT</span>
+            <span class="slate-item"><span class="slate-label">ROLE</span> LET'S TALK</span>
+            <span class="slate-item"><span class="slate-label">TAKE</span> 05</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <h2>Get In Touch</h2>
+            <p>Have a project in mind, or just want to talk shop? Reach out using the form below or through my details.</p>
+            <address>
+                Nairobi, Kenya<br>
+                Email: <a href="mailto:kelvin.wandera@example.com">kelvin.wandera@example.com</a><br>
+                Available: <time datetime="2026-07">July 2026</time> onward
+            </address>
+        </section>
+
+        <section id="contact-form">
+            <h2>Send a Message</h2>
+            <form action="#" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Your Details</legend>
+
+                    <div class="form-row">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+254 7XX XXX XXX">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="project">Project Enquiry</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row radio-row">
+                        <p>Preferred Contact Method:</p>
+                        <div class="radio-group">
+                            <label><input type="radio" id="contact-email" name="contact-method" value="email" checked> Email</label>
+                            <label><input type="radio" id="contact-phone" name="contact-method" value="phone"> Phone</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" cols="40" placeholder="Tell me a bit about what you have in mind..."></textarea>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <label><input type="checkbox" id="agree" name="agree" required> I agree to be contacted regarding this message.</label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Send Message</button>
+                        <button type="reset" class="secondary">Clear Form</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="sprocket-strip" aria-hidden="true"></div>
+        <p>&copy; 2026 Kelvin Jacob Wandera. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
